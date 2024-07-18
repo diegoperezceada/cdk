@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "b6f1790df482741a802294b86edd682c56b0e18efff90fa6c578953fea48c1de": {
+      "source": {
+        "path": "ApiStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "b6f1790df482741a802294b86edd682c56b0e18efff90fa6c578953fea48c1de.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
